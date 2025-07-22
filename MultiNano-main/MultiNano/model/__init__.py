@@ -1,2 +1,0 @@
-def modle():
-    return None
