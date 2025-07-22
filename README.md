@@ -7,7 +7,7 @@ MultiNano is a deep learning framework designed for predicting m6A RNA modificat
 ## 1  Environment Setup
 
 ```bash
-conda env create -f /root/autodl-tmp/3/MultiNano-main/environment.yml
+conda env create -f demo/environment.yml
 ```
 
 | Option             | Purpose                                                           |
@@ -23,8 +23,8 @@ conda env create -f /root/autodl-tmp/3/MultiNano-main/environment.yml
 
 ```bash
 multi_to_single_fast5 \
-  -i /mnt/DATA/home/felicity/111ONTm6A/KO_WT/mESC/Mettl3/KO/mESCs_Mettl3_KO-ref_fast5 \
-  -s /mnt/DATA/home/felicity/111ONTm6A/KO_WT/mESC/Mettl3/KO/mESCs_Mettl3_KO-ref_fast5_single \
+  -i demo/input_fast5 \
+  -s demo/output_fast5_single \
   --recursive \
   -t 30
 ```
@@ -94,6 +94,8 @@ tombo resquiggle \
 ## 5  Map Reads to the Reference Transcriptome
 
 ```bash
+cat /path/to/fast5_guppy/*.fastq > test.fastq
+
 minimap2 -t 30 -ax map-ont ref.transcript.fa test.fastq | \
   samtools view -hSb | \
   samtools sort -@ 30 -o test.bam
