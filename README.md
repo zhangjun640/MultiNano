@@ -15,7 +15,7 @@ conda env create -f demo/environment.yml
 | `conda env create` | Creates a new Conda environment.                                  |
 | `-f <FILE>`        | Path to the `environment.yml` file listing all required packages. |
 
-**Tip:** Activate the environment afterwards with `conda activate multinano` (or use the environment name defined in `environment.yml`).
+**Tip:** Activate the environment afterwards with `conda activate MultiNano` (or use the environment name defined in `environment.yml`).
 
 ---
 
