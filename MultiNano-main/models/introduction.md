@@ -1,7 +1,7 @@
 # MultiNano Pretrained Models Guide
 
 You can download all MultiNano pretrained models from the following link:  
-[**MultiNano Model Drive**](https://drive.google.com/drive/folders/18vjG8KKiuw8K0IBtQWP_CQ55vHZOTbFF?usp=drive_link)
+[**MultiNano Models Drive**](https://drive.google.com/drive/folders/18vjG8KKiuw8K0IBtQWP_CQ55vHZOTbFF?usp=drive_link)
 
 ## Model Categories and Recommendations
 
