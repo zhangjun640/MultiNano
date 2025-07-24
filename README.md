@@ -7,15 +7,15 @@ MultiNano is a deep learning framework designed for predicting m6A RNA modificat
 ## 1  Environment Setup
 
 ```bash
-conda env create -f demo/environment.yml
+conda env create -f demo/MultiNano.yml
 ```
 
 | Option             | Purpose                                                           |
 | ------------------ | ----------------------------------------------------------------- |
 | `conda env create` | Creates a new Conda environment.                                  |
-| `-f <FILE>`        | Path to the `environment.yml` file listing all required packages. |
+| `-f <FILE>`        | Path to the `MultiNano.yml` file listing all required packages. |
 
-**Tip:** Activate the environment afterwards with `conda activate MultiNano` (or use the environment name defined in `environment.yml`).
+**Tip:** Activate the environment afterwards with `conda activate MultiNano` (or use the environment name defined in `MultiNano.yml`).
 
 ---
 
