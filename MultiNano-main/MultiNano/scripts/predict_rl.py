@@ -38,7 +38,7 @@ def argparser():
                         choices=["basecall", "raw_signals", "comb"],
                         required=False, help="module for train:[basecall, raw_signal, comb_basecall_raw]")
                         
-    parser.add_argument("--output_file", default="/root/autodl-tmp/1111New/syn/nano_syn0.tsv",required=False, type=str, help="output file")
+    parser.add_argument("--output_file", required=True, type=str, help="output file")
 
     parser.add_argument("--nproc", default=4, type=int, help="number of processes")
 
