@@ -1,4 +1,4 @@
-![image]( ./MutliNano.pic.png)
+![image]( ./MutliNano.pic.jpg)
 # MultiNano: A Deep Learning Framework for m6A Prediction
 ---
 ![GitHub release (latest SemVer)](https://img.shields.io/badge/Version-v1.0-yellowgreen) ![GitHub release (latest SemVer)](https://img.shields.io/badge/Language-python-blue)
