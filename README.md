@@ -1,4 +1,6 @@
 # MultiNano: A Deep Learning Framework for m6A Prediction
+---
+![GitHub release (latest SemVer)](https://img.shields.io/badge/Version-v1.0-yellowgreen) ![GitHub release (latest SemVer)](https://img.shields.io/badge/Language-python-blue)
 
 **MultiNano** is a deep learning framework designed for predicting m6A RNA modifications using raw electrical signals from Oxford Nanopore sequencing. It provides high accuracy across species and conditions, offering a user-friendly pipeline for researchers. MultiNano supports both training from scratch and direct prediction modes, detailed as follows.
 
