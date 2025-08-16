@@ -109,10 +109,10 @@ def _get_basecall_errors(err_dir, rid):
             if fld: lines.append(fld)
     if not lines: return [], None
 
-    try:                                # 基准行：倒数第 2 列 != '.' 且 read_index 为 int
+    try:                               
         first_idx = next(l[-3] for l in lines if isinstance(l[-3], int) and l[-2] != '.')
     except StopIteration:
-        return [], None                 # 极端情况：全是插入/删除行
+        return [], None                 
 
     rel_pos = [(int(l[-3])-first_idx) if isinstance(l[-3], int) else '.' for l in lines]
     return rel_pos, lines
@@ -142,9 +142,7 @@ def _build_event_index_to_error_line(err_lines):
             mapping[base_idx]=(idx,l)
     return mapping
 
-# ------------------------------------------------------------------
 # Core feature extraction (mis/ins/del)
-# ------------------------------------------------------------------
 def _extract_features(f5s,corr_grp,subgrp,norm_m,
                       motif_seqs,klen,slen,err_dir):
     feats,err= [],0
@@ -206,7 +204,6 @@ def _extract_features(f5s,corr_grp,subgrp,norm_m,
     return feats,err
 
 # Feature serialization, file writing, multiprocessing scheduler, main
-
 
 
 # Feature serialization
