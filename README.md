@@ -7,7 +7,7 @@
 ---
 **MultiNano** is a deep learning framework designed for predicting m6A RNA modifications using raw electrical signals from Oxford Nanopore sequencing. It provides high accuracy across species and conditions, offering a user-friendly pipeline for researchers. MultiNano supports both training from scratch and direct prediction modes, detailed as follows.
 You can read our paper directly at [here](https://www.biorxiv.org/content/10.1101/2025.08.04.668591v1.abstract) for more details.
-
+---
 ## 1. Environment Setup
 
 First, create the Conda environment using the provided `MultiNano.yml` file. This will install all necessary dependencies.
