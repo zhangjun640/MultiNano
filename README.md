@@ -73,7 +73,7 @@ tombo resquiggle   /path/to/workspace   /path/to/reference.fa   --rna   --overwr
 | Option                    | Purpose                                                                                                                              |
 | :------------------------ | :----------------------------------------------------------------------------------------------------------------------------------- |
 | **Positional 1**          | Workspace directory containing the base-called single-fast5 files from the previous step.                                            |
-| **Positional 2**          | The reference genome or transcriptome in FASTA format.                                                                               |
+| **Positional 2**          | The reference transcriptome in FASTA format.                                                                               |
 | `--rna`                   | Informs Tombo to use RNA-specific models and expectations for signal alignment.                                                      |
 | `--overwrite`             | If the command was run before, this will overwrite the previous Tombo output within the fast5 files.                                |
 | `--processes <INT>`       | Number of worker processes for parallel execution.                                                                                   |
