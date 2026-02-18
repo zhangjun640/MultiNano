@@ -174,8 +174,17 @@ If you need to determine the modification status of individual reads, use this m
 ```bash
 python scripts/predict_rl.py     --model /path/to/your/trained_read_model.pt     --input_file /path/to/your/read_features_for_prediction.txt     --output_file /path/to/your/read_predictions.tsv
 ```
+### 11. modrate rates Prediction
 
-### 11. Two-Stage Prediction (Site-level with False Positive Control)
+If you need to determine the modification status of individual reads, use this mode.
+
+```bash
+python aggregate_modsrate_sites.py \
+    -i read_level_preds.txt \
+    -o site_level_results.txt \
+    --min_coverage 10
+```
+### 12. Two-Stage Prediction (Site-level with False Positive Control)
 
 This advanced workflow first generates per-read probabilities and then uses a second model to reduce false positives. This is the recommended approach for the highest accuracy.
 
