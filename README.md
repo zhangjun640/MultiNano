@@ -179,7 +179,7 @@ python scripts/predict_rl.py     --model /path/to/your/trained_read_model.pt    
 If you need to determine the modification status of individual reads, use this mode.
 
 ```bash
-python aggregate_modsrate_sites.py \
+python scripts/aggregate_modsrate_sites.py \
     -i read_level_preds.txt \
     -o site_level_results.txt \
     --min_coverage 10
